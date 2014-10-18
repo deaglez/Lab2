@@ -4,6 +4,8 @@ require 'rails/test_help'
 
 class ActiveSupport::TestCase
   ActiveRecord::Migration.check_pending!
+  require "minitest/reporters"
+  Minitest::Reporters.use!
 
   # Setup all fixtures in test/fixtures/*.yml for all tests in alphabetical order.
   #
